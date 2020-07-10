@@ -1,0 +1,25 @@
+@import "_reset";
+@import "_header";
+@import "top";
+
+
+.isse{
+    color: rgb(226, 73, 73);
+   text-transform: uppercase;
+   font-weight: bold;
+
+}
+body{
+
+    font-family: 'Raleway', sans-serif
+    
+}
+.color{
+    background-color: royalblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
