@@ -1,57 +1,101 @@
 .header {
+  width: 100%;
+  background-color: #f9f8fb;
+
+  &__h1{
+      font-weight: 900;
+      font-size: 2.5rem;
+  }
+
+  &__container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-image: url(../images/strwbery.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &__head {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    align-items: center; 
-    padding: px;
+  }
 
+  &__logo {
+    font-family: "pacificoregular", cursive;
+  }
 
-&__nav {
+  &__nav {
     display: flex;
     font-size: 16px;
     line-height: 25px;
     font-weight: 700;
     text-transform: uppercase;
-  
+  }
 
-    
-    &__list  {
-        display: flex;
-        flex-direction: row;
-        
-    }  
-    
-
-    &__item {
-      display: flex;
-        margin-right: 35px;
-        height: 50px;
-        border: none;
-        border-top:2px solid transparent;
-        
-
-        & a {
-          display: flex;
-          width: 100%;
-          color: #000;
-          height: 100%;
-        }
-        
-        &:last-child {
-            margin-right: 20px;
-        }
-
-        &:hover {
-            border-top:2px solid red;
-            
-        }
-
+  &__list {
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 730px) {
+        flex-direction: column;
     }
-   
+  }
 
-    
+  &__item {
+    display: flex;
 
+    margin-right: 35px;
+    height: 50px;
+    border: none;
+    border-top: 2px solid transparent;
+
+    & a {
+      display: flex;
+      width: 100%;
+      color: #000;
+      height: 100%;
+    }
+
+    &:last-child {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      border-top: 2px solid red;
+    }
+  }
+
+  &__hero {
+    margin-top: 240px;
+    margin-bottom: 240px;
+    max-width: 450px;
+  }
 }
 
+.top {
+  align-self: flex-start;
+  background: url("images/strwbery.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
 }
+
+.btn {
+  display: flex;
+
+  background-color: #ff6033;
+  color: white;
+  border: none;
+  margin-top: 30px;
+  //margin-left: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 20px 30px 0px rgba(255, 96, 51, 0.3);
+  -moz-box-shadow: 0px 20px 30px 0px rgba(255, 96, 51, 0.3);
+  box-shadow: 0px 20px 30px 0px rgba(255, 96, 51, 0.3);
+}
+
+

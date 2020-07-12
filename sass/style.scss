@@ -1,25 +1,23 @@
+@font-face {
+  font-family: 'pacificoregular';
+  src: url('../fonts/pacifico-regular-webfont.woff2') format('woff2'),
+       url('../fonts/pacifico-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 @import "_reset";
 @import "_header";
-@import "top";
+@import "_about";
 
-
-.isse{
-    color: rgb(226, 73, 73);
-   text-transform: uppercase;
-   font-weight: bold;
-
+.isse {
+  color: rgb(226, 73, 73);
+  text-transform: uppercase;
+  font-weight: bold;
 }
-body{
-
-    font-family: 'Raleway', sans-serif
-    
+body {
+  font-family: "Raleway", sans-serif;
 }
-.color{
-    background-color: royalblue;
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.color {
+  background-color: royalblue;
 }
